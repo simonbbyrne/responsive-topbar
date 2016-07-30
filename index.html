@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li class="icon"><a href="#" onclick="showNav()">&#9776</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+    function showNav() {
+        var menu = document.querySelector('.menu');
+
+        if (menu.className === 'menu') {
+            menu.className += " menu-open";
+        } else {
+            menu.className = 'menu';
+        }
+    }
+    </script>
+</body>
+
+</html>

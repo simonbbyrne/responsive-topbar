@@ -1,0 +1,68 @@
+html {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu {
+    background-color: #0AB5FF;
+    overflow: hidden;
+}
+
+.menu li.icon {
+    font-size: 1.375em;
+    float: right;
+    display: none;
+}
+
+.menu a {
+    color: #FFFFFF;
+    padding: 15px;
+    display: inline-block;
+    font-size: 1em;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    background-color: #0891CC;
+}
+
+@media screen and (max-width: 680px) {
+    .menu li {
+        display: none;
+    }
+    .menu li.icon {
+        display: inline-block;
+    }
+    .menu-open {
+        position: relative;
+    }
+    .menu-open li {
+        display: block;
+    }
+    .menu-open a {
+        width: 100%;
+    }
+    .menu-open li.icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
